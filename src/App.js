@@ -79,8 +79,23 @@ class App extends Component {
       <Task key={item.id} task={item} onTaskClick={this.deleteTask} />
     );
 
-    return (
+    return (      
       <div className="todo-wrapper">
+        <div class="italics">
+          <h3>Realtime DB Demo with MongoDB Change Streams</h3>
+          <p>
+            This demo was adapted from a tutorial by <a href="https://pusher.com/tutorials/mongodb-change-streams">Pusher.js.</a>
+          </p>
+          <p>
+            Under the hood is a Node.js API which both writes to a MongoDB database and subscribes to changes via <a href="https://docs.mongodb.com/manual/changeStreams/">mongo 3.6 change streams.</a>
+          </p>
+          <p>
+            Changes are published via a Pusher channel, which this React App then consumes.
+          </p>  
+          <p>
+            Open this app in two windows to watch the real-time updates in action.
+          </p>                    
+        </div>         
         <form>
           <input type="text" className="input-todo" placeholder="New task" onChange={this.updateText} value={this.state.task} />
           <div className="btn btn-add" onClick={this.postTask}>+</div>

@@ -14,9 +14,9 @@ body {
 }
 
 .todo-wrapper {
-  width: 400px;
+  width: 500px;
   max-width: 100%;
-  min-height: 500px;
+  min-height: 550px;
   margin: 20px auto 40px;
   border: 1px solid #eee;
   border-radius: 4px;
