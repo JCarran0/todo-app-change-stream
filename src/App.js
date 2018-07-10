@@ -5,7 +5,7 @@ import React, {
 import logo from './logo.svg';
 import './App.css';
 
-const API_URL = 'http://localhost:8000/';
+const API_URL = 'https://change-stream-demo.herokuapp.com/';
 
 class App extends Component {
   constructor(props) {
